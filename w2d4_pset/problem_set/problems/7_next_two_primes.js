@@ -11,8 +11,26 @@ nextTwoPrimes(20); // => [ 23, 29 ]
 nextTwoPrimes(97); // => [ 101, 103 ]
 ***********************************************************************/
 
-function nextTwoPrimes(num) {
+function isPrime(number) {
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0 ) {
+      return false;
+    }
+  }
 
+  return true;
+}
+
+function nextTwoPrimes(num) {
+  let arrPrimes = [];
+
+  for (let i = num + 1; arrPrimes.length < 2; i++) {
+    if (isPrime(i)) {
+      arrPrimes.push(i);
+    }
+  }
+
+  return arrPrimes;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

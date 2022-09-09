@@ -10,7 +10,7 @@ function howHigh(height) {
 }
 
 function jump(height) {
-  let rest = howhigh(height);
+  let rest = howHigh(height);
   return "I'm jumping " + rest;
 }
 

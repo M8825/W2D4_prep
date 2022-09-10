@@ -22,7 +22,15 @@ twoDimensionalSize(arr2); // => 5
 ***********************************************************************/
 
 function twoDimensionalSize(array) {
+  let sum = 0;
 
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].length; j++) {
+      sum += 1;
+    }
+  }
+
+  return sum;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
